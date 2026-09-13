@@ -809,8 +809,8 @@ vayu/
 
 **1. Clone the repository**
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd vayu
+git clone https://shivamsingh2345334-source/vayu-autonomous-logistics-ai.git
+cd vayu-autonomous-logistics-ai
 2. Install dependencies
 
 Bash
