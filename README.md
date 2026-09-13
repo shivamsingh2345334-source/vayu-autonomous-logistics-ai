@@ -12,10 +12,7 @@
 
 > 🔗 **[🎥 Watch VAYU Demo — Loom](https://www.loom.com/share/4f8ba9ef2ad0441aaca530663d707834)**
 
-**Loom Link:**
-`____________________________________________________________`
 
----
 
 # 🚛 What is VAYU?
 
@@ -1113,21 +1110,6 @@ without requiring a human operator to manually coordinate every disruption.
 
 ---
 
-# 🎥 Demo & Presentation
-
-**Loom Demo:**
-`____________________________________________________________`
-
-**GitHub Repository:**
-`____________________________________________________________`
-
-**Live Demo:**
-`____________________________________________________________`
-
-**Documentation:**
-`____________________________________________________________`
-
----
 
 # 👨‍💻 Project Status
 
