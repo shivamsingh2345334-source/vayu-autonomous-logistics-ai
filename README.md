@@ -619,19 +619,6 @@ GEMINI_API_KEY=your_gemini_api_key
 ORS_API_KEY=your_openrouteservice_api_key
 ```
 
-### Important
-
-Never commit `.env` to GitHub.
-
-Add this to `.gitignore`:
-
-```gitignore
-.env
-__pycache__/
-*.pyc
-```
-
----
 
 # 🗃️ Airtable Data Model
 
@@ -808,90 +795,38 @@ Status: Empty
 
 ---
 
-# 🏗️ Project Structure
+## 🏗️ Project Structure
+For this Hackathon PoC, the entire agent logic and UI are consolidated for easy testing:
 
-Recommended repository structure:
-
-```text
 vayu/
 │
-├── app.py
-├── README.md
-├── requirements.txt
-├── .env.example
-├── .gitignore
-│
-├── agents/
-│   ├── agent_x.py
-│   └── agent_y.py
-│
-├── routing/
-│   └── route_engine.py
-│
-├── fallbacks/
-│   ├── communication.py
-│   └── fleet_recovery.py
-│
-└── utils/
-    └── telegram.py
-```
-
-For the current proof-of-concept, these components can also remain in a single Python file.
+├── main.py              # Core agent logic, integrations, and CLI UI
+├── README.md            # Documentation
+├── requirements.txt     # Python dependencies
+├── .env.example         # Template for API keys
+└── .gitignore           # Git ignore rules
 
 ---
 
-# ⚙️ How to Run
+## ⚙️ How to Run
 
-### 1. Clone the repository
-
+**1. Clone the repository**
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd vayu
-```
+2. Install dependencies
 
-### 2. Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-### 3. Activate it
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
-### 4. Install dependencies
-
-```bash
+Bash
 pip install -r requirements.txt
-```
+3. Configure environment variables
+Create a .env file in the root directory and add your keys (see .env.example).
 
-### 5. Configure environment variables
+4. Run VAYU
 
-Create:
+Bash
+python main.py
+(Note: If your file is named app.py, use python app.py instead).
 
-```text
-.env
-```
-
-and add the required API credentials.
-
-### 6. Run VAYU
-
-```bash
-python app.py
-```
-
----
 
 # 🔒 Reliability Philosophy
 
